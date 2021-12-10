@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -25,8 +26,19 @@ const config = {
       pages: 'build',
       assets: 'build',
       fallback: null
-    })
-  }
+    }),
+    vite: {
+      server: {
+        proxy: {
+          '/': {
+            target: 'http://localhost:4000',
+            changeOrigin: true,
+            secure: true,
+          },
+        },
+      },
+    },
+  },
 };
 
 export default config;
