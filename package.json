@@ -1,5 +1,5 @@
 {
-  "name": "~TODO~",
+  "name": "security5lab",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
