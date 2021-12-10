@@ -27,17 +27,6 @@ const config = {
       assets: 'build',
       fallback: null
     }),
-    vite: {
-      server: {
-        proxy: {
-          '/': {
-            target: 'http://localhost:4000',
-            changeOrigin: true,
-            secure: true,
-          },
-        },
-      },
-    },
   },
 };
 
