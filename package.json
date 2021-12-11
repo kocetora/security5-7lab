@@ -6,7 +6,7 @@
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "lint": "eslint . --ignore-path .gitignore",
-    "prettier": "prettier --write --ignore-path .gitignore",
+    "prettier": "prettier --write --ignore-path .gitignore .",
     "format": "npm run prettier && npm run lint"
   },
   "devDependencies": {
