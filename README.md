@@ -1,0 +1,1 @@
+# Це фронт до [5-7 лаби](https://github.com/kocetora/koa-knex-hrm)
